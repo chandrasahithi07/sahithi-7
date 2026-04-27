@@ -43,10 +43,10 @@ button, select, input {
   margin-top: -20px;
 }
 
-/* Background canvas */
 canvas {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;          /* send it behind everything */
+  pointer-events: none; /* IMPORTANT: allows clicks through */
 }
